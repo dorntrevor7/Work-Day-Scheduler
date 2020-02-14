@@ -3,8 +3,11 @@ body {
     font-family: "Times New Roman";
     font-size: 16px;
     line-height: 1;
+    background-color: rgb(234, 253, 255);
   }
-  
+  .container {
+    padding: 30px;
+  }
   textarea{
     background: transparent;
     border: none;
@@ -19,7 +22,7 @@ body {
     background-color: transparent;
     color: black;
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border-bottom: 10px double #ff6961;
   }
   
   .description{
@@ -42,7 +45,7 @@ body {
     color: #000000;
     border-top: 1px dashed #000000;
   }
-  
+  /* styles for color change of time */
   .past {
     background-color: #d3d3d3;
     color: white;
@@ -57,7 +60,7 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+  /* Save button styles */
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
