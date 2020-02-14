@@ -1,22 +1,22 @@
 
-// Displays the current day in the class jumbrotron
-var currentDay = $("<p>").text(moment().format("MMMM Do YYYY"));
-currentDay.addClass("lead");
-$(".jumbotron").append(currentDay);
 
 // creating getting the attribute of the data number and 
 // displaying the color in the right time slot/box
 $(".hour").each(function () {
+    console.log("hour function running");
     $(this)
-        .removeClass("present")
-        .removeClass("future")
-        .removeClass("past");
-
-    // creating variables for the moment methods 
+    .removeClass("present")
+    .removeClass("future")
+    .removeClass("past");
+    
+    // creating variables to be numbers for the moment methods 
     // of getting the hour that your computer is currently in and 
     // checking to see if the hour is past, present, or future
-    var currentHour = moment().format("h");
-    var dataNum = $(this).attr("data-num");
+    var currentHour = parseInt(moment().hours());
+    var dataNum = parseInt($(this).attr("data-num"));
+
+    console.log("currentHour: ", currentHour);
+    console.log("dataNum: ", dataNum);
 
     if (dataNum < currentHour) {
         $(this).addClass("past");
@@ -31,14 +31,14 @@ $(".hour").each(function () {
 
 // When the save button gets clicked
 $(".saveBtn").on("click", function () {
-
+    
     // The saveBtn gets the value of text from the from its sibling 
     // in the textarea and pairs it with the hour that is displayed
     var text = $(this).siblings("textarea").val().trim();
     var hour = $(this).siblings("textarea").attr("data-num");
     console.log("text: ", text);
     console.log("hour: ", hour);
-
+    
     // Store in local storage
     localStorage.setItem(hour, text);
 })
@@ -55,3 +55,8 @@ $("#2").text(localStorage.getItem("2"));
 $("#3").text(localStorage.getItem("3"));
 $("#4").text(localStorage.getItem("4"));
 $("#5").text(localStorage.getItem("5"));
+
+// Displays the current day in the class jumbrotron
+var currentDay = $("<p>").text(moment().format("MMMM Do YYYY"));
+currentDay.addClass("lead");
+$(".jumbotron").append(currentDay);
