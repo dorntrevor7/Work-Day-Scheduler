@@ -46,7 +46,7 @@ $(".saveBtn").on("click", function () {
 //getting the texts that are stored in the keys
 // from local stroage and 
 // tracing it back to the certain Id
-$("#9").text(localStorage.getItem("09"));
+$("#9").text(localStorage.getItem("9"));
 $("#10").text(localStorage.getItem("10"));
 $("#11").text(localStorage.getItem("11"));
 $("#12").text(localStorage.getItem("12"));
