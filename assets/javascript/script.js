@@ -50,11 +50,11 @@ $("#9").text(localStorage.getItem("9"));
 $("#10").text(localStorage.getItem("10"));
 $("#11").text(localStorage.getItem("11"));
 $("#12").text(localStorage.getItem("12"));
-$("#1").text(localStorage.getItem("1"));
-$("#2").text(localStorage.getItem("2"));
-$("#3").text(localStorage.getItem("3"));
-$("#4").text(localStorage.getItem("4"));
-$("#5").text(localStorage.getItem("5"));
+$("#1").text(localStorage.getItem("13"));
+$("#2").text(localStorage.getItem("14"));
+$("#3").text(localStorage.getItem("15"));
+$("#4").text(localStorage.getItem("16"));
+$("#5").text(localStorage.getItem("17"));
 
 // Displays the current day in the class jumbrotron
 var currentDay = $("<p>").text(moment().format("MMMM Do YYYY"));
