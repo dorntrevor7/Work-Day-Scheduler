@@ -10,4 +10,12 @@ In this project I created a work day scheduler with [Bootstrap](https://getboots
     * Red = Present
     * Green = future
 
+<br>
+
+The following image demonstrates on the computer:
+
+![SC Code Quiz computer display](assets/imgs/day_planner.png)
+
+<br>
+
 Here's the link: [Work Day Scheduler](https://dorntrevor7.github.io/Work-Day-Scheduler/)
